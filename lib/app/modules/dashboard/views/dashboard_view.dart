@@ -49,7 +49,7 @@ class DashboardView extends StatelessWidget {
               ),
               _bottomNavigationBarItem(
                 Icon: ImageIcon(
-                  AssetImage('assets/icons/icon_detection.png'),
+                  AssetImage('assets/icons/icon_graph.png'),
                 ),
                 label: 'Graph',
               ),
