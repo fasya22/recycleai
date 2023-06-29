@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:recycleai/app/modules/home/views/home_view.dart';
 import 'package:recycleai/app/modules/detection/views/detection_view.dart';
+import 'package:recycleai/app/modules/graph/views/graph_view.dart';
 import 'package:recycleai/app/modules/profile/views/profile_view.dart';
 import '../controllers/dashboard_controller.dart';
 
@@ -18,6 +19,7 @@ class DashboardView extends StatelessWidget {
               children: [
                 HomeView(),
                 DetectionView(),
+                GraphView(),
                 ProfileView(),
               ],
             ),
@@ -44,6 +46,12 @@ class DashboardView extends StatelessWidget {
                   AssetImage('assets/icons/icon_detection.png'),
                 ),
                 label: 'Detection',
+              ),
+              _bottomNavigationBarItem(
+                Icon: ImageIcon(
+                  AssetImage('assets/icons/icon_detection.png'),
+                ),
+                label: 'Graph',
               ),
               _bottomNavigationBarItem(
                 Icon: ImageIcon(

@@ -1,4 +1,5 @@
 import 'package:recycleai/model/change_password.dart';
+import 'package:recycleai/model/sampah.dart';
 import 'package:recycleai/model/login_model.dart';
 import 'package:recycleai/model/profile.dart';
 import 'package:recycleai/model/simple_model.dart';
@@ -92,6 +93,20 @@ class AuthRepository {
       return Tuple2(response.statusCode ?? 400, updateProfile);
     } catch (e) {
       return Tuple2(400 , UpdateProfile(message: ""));
+    }
+  }
+  Future<Tuple2<int, sampah>> getSampah() async {
+    try {
+      Response response = await dio.get(
+        "fitness",
+        options: Options(
+          headers: {"Authorization": "Bearer " + Prefs.getString(Prefs.token)!},
+        )
+      );
+      sampah getSampah = sampah.fromJson(response.data);
+      return Tuple2(response.statusCode ?? 400, getSampah);
+    } catch (e) {
+      return Tuple2(400 , sampah(message: ""));
     }
   }
 }

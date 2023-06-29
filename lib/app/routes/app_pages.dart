@@ -18,6 +18,8 @@ import '../modules/detailplastic/bindings/detailplastic_binding.dart';
 import '../modules/detailplastic/views/detailplastic_view.dart';
 import '../modules/detection/bindings/detection_binding.dart';
 import '../modules/detection/views/detection_view.dart';
+import '../modules/graph/bindings/graph_binding.dart';
+import '../modules/graph/views/graph_view.dart';
 import '../modules/history/bindings/history_binding.dart';
 import '../modules/history/views/history_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -120,6 +122,11 @@ class AppPages {
       name: _Paths.CHANGE_PASSWORD,
       page: () => const ChangePasswordView(),
       binding: ChangePasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.GRAPH,
+      page: () => const GraphView(),
+      binding: GraphBinding(),
     ),
   ];
 }

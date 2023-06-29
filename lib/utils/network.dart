@@ -16,9 +16,9 @@ class Network {
       return client;
     };
     if (kReleaseMode) {
-      dio.options.baseUrl = "https://bawdy-notebook-production.up.railway.app/";
+      dio.options.baseUrl = "https://recycleai-api-production.up.railway.app/";
     } else {
-      dio.options.baseUrl = "https://bawdy-notebook-production.up.railway.app/";
+      dio.options.baseUrl = "https://recycleai-api-production.up.railway.app/";
     }
     dio.options.responseType = ResponseType.json;
     dio.options.headers = {

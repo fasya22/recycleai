@@ -20,6 +20,7 @@ abstract class Routes {
   static const DETAILEWASTE = _Paths.DETAILEWASTE;
   static const UPDATE_PROFILE = _Paths.UPDATE_PROFILE;
   static const CHANGE_PASSWORD = _Paths.CHANGE_PASSWORD;
+  static const GRAPH = _Paths.GRAPH;
 }
 
 abstract class _Paths {
@@ -41,4 +42,5 @@ abstract class _Paths {
   static const DETAILEWASTE = '/detailewaste';
   static const UPDATE_PROFILE = '/update-profile';
   static const CHANGE_PASSWORD = '/change-password';
+  static const GRAPH = '/graph';
 }
