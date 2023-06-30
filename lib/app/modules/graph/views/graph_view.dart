@@ -121,6 +121,14 @@ class GraphView extends GetView<GraphController> {
                   ),
                   SizedBox(width: 10),
                   Text('Glass'),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    width: 20,
+                    height: 20,
+                    color: Colors.yellow,
+                  ),
+                  SizedBox(width: 10),
+                  Text('Metal'),
                 ],
               ),
               SizedBox(height: 20),
@@ -131,10 +139,10 @@ class GraphView extends GetView<GraphController> {
                     margin: EdgeInsets.only(left: 20),
                     width: 20,
                     height: 20,
-                    color: Colors.yellow,
+                    color: Colors.blueGrey,
                   ),
                   SizedBox(width: 10),
-                  Text('Metal'),
+                  Text('Paper'),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     width: 20,
@@ -142,7 +150,7 @@ class GraphView extends GetView<GraphController> {
                     color: Colors.green,
                   ),
                   SizedBox(width: 10),
-                  Text('Paper'),
+                  Text('e-waste'),
                 ],
               )
             ],
@@ -153,7 +161,7 @@ class GraphView extends GetView<GraphController> {
   }
 
   Widget leftTitles(double value, TitleMeta meta) {
-    DateFormat inputFormat = DateFormat("E, d MMM yyyy HH:mm:ss 'GMT'");
+    DateFormat inputFormat = DateFormat("E, dd MMM yyyy HH:mm:ss 'GMT'");
     DateTime date =
         inputFormat.parse(controller.data[value.toInt() - 1].createdAt ?? '');
 

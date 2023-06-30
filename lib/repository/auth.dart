@@ -99,7 +99,7 @@ class AuthRepository {
   Future<Tuple2<int, sampah>> getSampah() async {
     try {
       Response response = await dio.get(
-        "Sampah",
+        "sampah",
         options: Options(
           headers: {"Authorization": "Bearer " + Prefs.getString(Prefs.token)!},
         )
