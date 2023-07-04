@@ -33,7 +33,7 @@ class LoginController extends GetxController {
       Get.offAllNamed(Routes.DASHBOARD);
       Get.snackbar(
         "Succes",
-        "Now let's workout together",
+        "Now let's manage waste responsibly with us!",
         backgroundColor: Colors.green,
         colorText: Colors.white,
         duration: const Duration(seconds: 2),
