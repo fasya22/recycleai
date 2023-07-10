@@ -121,7 +121,7 @@ class LoginView extends GetView<LoginController> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            print('forget tapped');
+                            Get.toNamed(Routes.CHANGE_PASSWORD);
                           },
                           child: Text(
                             'Forget Password ?',

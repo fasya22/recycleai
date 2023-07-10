@@ -1,3 +1,4 @@
+import 'package:device_apps/device_apps.dart';
 import 'package:recycleai/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,7 @@ class Card_Deteksi extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(left: 10, right: 20),
         child: InkWell(
-          onTap: () => Get.toNamed(Routes.CAMERA),
+          onTap: () {DeviceApps.openApp('org.tensorflow.lite.examples.objectdetection');},
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
